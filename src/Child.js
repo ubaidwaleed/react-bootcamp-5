@@ -7,8 +7,9 @@ console.log(counterValue);
 
     return(
         <div>
-            <h3>this is first child</h3>
-            <h4>Counter Value : {counterValue}</h4>
+            <h3>this is first child using counter context</h3>
+            <h4>Counter Value : {counterValue[0]}</h4>
+            <button onClick={()=>{counterValue[1](++counterValue[0])}}>Increment</button>
         </div>
     )
 }
